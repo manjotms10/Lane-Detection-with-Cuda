@@ -1,0 +1,1 @@
+nvcc -gencode arch=compute_61,code=sm_61 -I/usr/local/include/opencv4 -L/usr/local/lib/ *.cpp *cu -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_videoio -std=c++11 -o main
